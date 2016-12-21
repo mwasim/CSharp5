@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3458C474-A2D6-4E21-A761-228BB38A8392}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySharedAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4a3e5f12aabad53c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MySharedAssembly\MySharedAssembly\bin\Debug\MySharedAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrays\ArrayListDemo.cs" />
+    <Compile Include="Arrays\OneDimArray.cs" />
+    <Compile Include="Arrays\TwoDimArray.cs" />
+    <Compile Include="Assemblies\AssemblyExamples.cs" />
+    <Compile Include="Classes\AbstractClasses.cs" />
+    <Compile Include="Classes\ClassesDemo.cs" />
+    <Compile Include="Classes\HybridIneritance.cs" />
+    <Compile Include="Classes\MethodOverriding.cs" />
+    <Compile Include="Classes\Polymorphism.cs" />
+    <Compile Include="Classes\RectArea.cs" />
+    <Compile Include="Classes\SingleInheritance.cs" />
+    <Compile Include="Classes\StaticMember.cs" />
+    <Compile Include="Classes\Student.cs" />
+    <Compile Include="DataTypes\ImplicitType.cs" />
+    <Compile Include="Delegates\DelegatesDemo.cs" />
+    <Compile Include="Delegates\DelegatesExamples.cs" />
+    <Compile Include="ErrorsAndExceptions\ExceptionExamples.cs" />
+    <Compile Include="Formats\StringFormats.cs" />
+    <Compile Include="GenericsAndCollections\ArrayEnumerator.cs" />
+    <Compile Include="GenericsAndCollections\BitArrayExamples.cs" />
+    <Compile Include="GenericsAndCollections\CGDemo.cs" />
+    <Compile Include="GenericsAndCollections\GenericsExamples.cs" />
+    <Compile Include="GenericsAndCollections\HashtableExamples.cs" />
+    <Compile Include="GenericsAndCollections\IEnumerableExamples.cs" />
+    <Compile Include="GenericsAndCollections\QueueExamples.cs" />
+    <Compile Include="GenericsAndCollections\SortedListExamples.cs" />
+    <Compile Include="GenericsAndCollections\StackExamples.cs" />
+    <Compile Include="Interfaces\InterfacesDemo.cs" />
+    <Compile Include="Interfaces\InterfacesExamples.cs" />
+    <Compile Include="LinqQueries\ExtensionMethods.cs" />
+    <Compile Include="LinqQueries\LinqExamples.cs" />
+    <Compile Include="Misc\ArithmeticOp.cs" />
+    <Compile Include="Misc\Bitwise.cs" />
+    <Compile Include="Misc\CheckUncheck.cs" />
+    <Compile Include="Misc\Loops.cs" />
+    <Compile Include="Misc\MathMethods.cs" />
+    <Compile Include="Misc\Methods.cs" />
+    <Compile Include="Misc\RectAreaInput.cs" />
+    <Compile Include="Misc\TheEnum.cs" />
+    <Compile Include="Misc\TypeInfo.cs" />
+    <Compile Include="OperatorOverloading\Complex.cs" />
+    <Compile Include="OperatorOverloading\ConversionOverloading.cs" />
+    <Compile Include="OperatorOverloading\OperatorOverloadingDemo.cs" />
+    <Compile Include="OperatorOverloading\Product.cs" />
+    <Compile Include="Operators\TheAsOperator.cs" />
+    <Compile Include="Operators\TheIsOperator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenceTypes\EscapeSequence.cs" />
+    <Compile Include="ReferenceTypes\StringType.cs" />
+    <Compile Include="Service References\CalculateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesExamples.cs" />
+    <Compile Include="Streams\StreamExamples.cs" />
+    <Compile Include="Strings\StringBuilderDemo.cs" />
+    <Compile Include="Strings\StringDemo.cs" />
+    <Compile Include="Structs\DateTimeStructDemo.cs" />
+    <Compile Include="Structs\Product.cs" />
+    <Compile Include="Structs\TimeSpanDemo.cs" />
+    <Compile Include="Threads\ThreadsExamples.cs" />
+    <Compile Include="Threads\ThreadThroughClass.cs" />
+    <Compile Include="ValueTypes\CharType.cs" />
+    <Compile Include="ValueTypes\DecimalType.cs" />
+    <Compile Include="ValueTypes\FloatDouble.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Service References\CalculateService\CSharp.CalculateService.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CalculateService\Service1.wsdl" />
+    <None Include="Service References\CalculateService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculateService\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculateService\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CalculateService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculateService\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculateService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculateService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculateService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
