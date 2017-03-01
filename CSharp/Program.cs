@@ -168,11 +168,11 @@ namespace CSharp
             //LQDemo.ExtensionMethodExample();
             //LQDemo.LinqFruitsFilterExample1();
             //LQDemo.AnonymousTypesExample();
-            //LQDemo.LinqToXmlExample();
+            LQDemo.LinqToXmlExample();
 
             //ServicesDemo.WCFCalculateServiceExample();
 
-            ADemo.SharedAssemblyUsageExample();
+            //ADemo.SharedAssemblyUsageExample();
 
             Console.ReadKey();
         }
